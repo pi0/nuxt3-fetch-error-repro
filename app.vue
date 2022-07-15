@@ -1,19 +1,18 @@
 <script setup lang="ts">
 const refreshIndex = ref(0)
-const { data, refresh } = await useKql({
-  query: 'site',
+const { data, refresh, error } = await useKql({
+  query: 'kirby.page("home")',
   select: {
+    id: true,
     title: true,
-    children: {
-      query: 'site.children',
-      select: {
-        id: true,
-        title: true,
-        isListed: true,
-      },
-    },
+    // description: true,
+    headline: true,
+    subheading: true,
   },
 })
+
+console.log(data.value)
+console.log(error.value)
 </script>
 
 <template>
