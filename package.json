@@ -4,29 +4,11 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs",
-    "lint": "eslint \"**/*.{ts,vue}\" --ignore-path .gitignore",
-    "lint:fix": "npm run lint -- --fix",
-    "format": "prettier \"**/*.{css,html,json,md,ts,tsx,vue,yml}\" --write --ignore-path .gitignore"
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@types/node": "^18.0.4",
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "@typescript-eslint/parser": "^5.30.6",
-    "eslint": "^8.19.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-vue": "^9.2.0",
     "nuxt": "^3.0.0-rc.5",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "vue",
-        "webpack",
-        "vite"
-      ]
-    }
   }
 }
