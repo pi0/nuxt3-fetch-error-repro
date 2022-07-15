@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const refreshIndex = ref(0)
-const { data, refresh, error } = await useKql({
+const { data, refresh, error } = await useKqlTest({
   query: 'kirby.page("home")',
   select: {
     id: true,

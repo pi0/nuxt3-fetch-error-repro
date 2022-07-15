@@ -9,4 +9,10 @@ export default defineNuxtConfig({
     prefix: 'api/kql',
     auth: 'bearer',
   },
+
+  vite: {
+    build: {
+      minify: false,
+    },
+  },
 })
