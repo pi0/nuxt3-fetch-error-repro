@@ -12,6 +12,7 @@ console.log(data.value)
     <h1>Nuxt useFetch Hydration Error</h1>
     <p>
       This SSR rendered page should include a pre-rendered <code>pre</code> tag.
+      The response should be fetched server-side, but is fetched client-side.
     </p>
     <hr />
     <h2>Response</h2>
